@@ -9,7 +9,7 @@ angular.module('todomvc')
 
     /**
      * Checks if proposed todo title contains keywords that warrants
-     * a prompt from user to confirm they  
+     * a prompt from user to confirm they are not breaching privacy policy
      */
     isPrivacyConfirmNeeded: function(proposedTodoTitle) {
       var deferred = $q.defer();
