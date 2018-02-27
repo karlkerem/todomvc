@@ -13,7 +13,7 @@ angular.module('todomvc')
      */
     isPrivacyConfirmNeeded: function(proposedTodoTitle) {
       var deferred = $q.defer();
-      if (proposedTodoTitle.toLowerCase().indexOf('prism')) {
+      if (proposedTodoTitle.toLowerCase().indexOf('prism')>0) {
         var delay = Math.floor(Math.random()*900+100);
         $timeout(function() {
           deferred.resolve(true);
